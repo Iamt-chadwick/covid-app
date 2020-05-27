@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"io/ioutil"
 	"net/http"
 
@@ -38,5 +39,7 @@ func main() {
 	r.PathPrefix("/").Handler(http.FileServer(http.Dir("./build")))
 
 	http.ListenAndServe(":8100", r)
+
+	fmt.Println("Server is running fine ;) ")
 
 }
