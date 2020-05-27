@@ -1,4 +1,4 @@
-module covid-app
+module github.com/Iamt-chadwick/covid-app
 
 go 1.13
 
