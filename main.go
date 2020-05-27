@@ -38,7 +38,7 @@ func main() {
 
 	r.PathPrefix("/").Handler(http.FileServer(http.Dir("./build")))
 
-	http.ListenAndServe(":8100", r)
+	http.ListenAndServe(":8300", r)
 
 	fmt.Println("Server is running fine ;) ")
 
